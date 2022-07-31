@@ -18,10 +18,12 @@ class UserSeeder extends Seeder
         User::insert([
             'name' => 'John Smith',
             'comments' => 'Director',
+            'password' => bcrypt('password'),
         ],
-        ['name' => 'ibrahimMH',
-                'comments' => 'Programming',
-
+        [
+            'name' => 'ibrahimMH',
+            'comments' => 'Programming',
+            'password' => bcrypt('password'),
         ]);
     }
 }
