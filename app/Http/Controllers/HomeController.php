@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function getUser(User $id){
-        dd($id);
-        return view("layout.master");
+    public function getUser(User $user){
+        dd($user);
+        return view("app.main",compact('user'));
     }
 
     public function getUserWithId(){
