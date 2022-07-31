@@ -16,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',function (){
     return redirect()->route('user.show');
 });
-Route::get('user/{user}', [HomeController::class,'getUser'])->name('user.show');
-Route::get('id', [HomeController::class,'getUserWithId'])->name('user.show.with-id');
+Route::get('user/{user?}', [HomeController::class,'getUser'])->name('user.show');

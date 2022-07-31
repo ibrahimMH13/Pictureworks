@@ -16,18 +16,20 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::insert([
-            'name' => 'John Smith',
-            'comments' => 'Director',
-            'password' => bcrypt('password'),
-            'created_at' => now(),
-            'updated_at' => now()
-        ],
-        [
-            'name' => 'ibrahimMH',
-            'comments' => 'Programming',
-            'password' => bcrypt('password'),
-            'created_at' => now(),
-            'updated_at' => now()
+            [
+                'name' => 'John Smith',
+                'comments' => 'Director',
+                'password' => bcrypt('password'),
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'ibrahimMH',
+                'comments' => 'Programming',
+                'password' => bcrypt('password'),
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
         ]);
     }
 }
