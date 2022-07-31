@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function getUser(User $user){
-        dd($user);
         return view("app.main",compact('user'));
     }
 
