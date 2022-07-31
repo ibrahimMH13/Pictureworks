@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [HomeController::class,'index']);
+Route::get('/',function (){
+    return redirect()->route('user.show');
+});
+Route::get('user/{id}', [HomeController::class,'getUser'])->name('user.show');
+Route::get('id', [HomeController::class,'getUserWithId'])->name('user.show.with-id');
