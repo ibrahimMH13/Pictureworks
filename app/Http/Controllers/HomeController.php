@@ -23,11 +23,4 @@ class HomeController extends Controller
         }
            return view("app.main", compact('user'));
     }
-
-    public function create(){
-        return view('app.user.create');
-    }
-    public function store(StoreUserRequest $request){
-        User::create();
-    }
 }

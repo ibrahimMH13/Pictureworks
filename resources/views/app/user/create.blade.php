@@ -13,13 +13,13 @@
         <div>
             <label>
                 password
-                <input type="text" name="id" />
+                <input type="text" name="password" />
             </label>
         </div>
         <div>
             <label>
-                con
-                <input type="text" name="id" />
+                comments
+                <textarea name="comments" ></textarea>
             </label>
         </div>
      </header>
